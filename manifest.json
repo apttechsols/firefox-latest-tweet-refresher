@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Apt018 : Latest Tweet refresher",
+  "version": "1.0.2",
+
+  "description": "'Apt018 : Latest Tweet refresher' can refresh the tweet section from the twitter.com",
+
+  "icons": {
+    "48": "icons/Apt018LatestTweetRefresherIcon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*&f=live"],
+      "js": ["Apt018LatestTweetRefresher.js"]
+    }
+  ]
+
+}
